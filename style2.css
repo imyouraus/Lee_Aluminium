@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&family=Prompt:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  html{
+    scroll-padding-top: 60px;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #262626;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Nav */
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    
+    height: 80px;
+    width: 100%;
+    box-shadow: #646464;
+    background: #fff;
+  }
+  
+  .main-nav .logo {
+    width: 45px;
+
+  }
+
+  .main-nav .name {
+    font-size: 35px;
+    font-family: 'Prompt', sans-serif;
+    padding: left;
+    line-height: 80px;
+  }
+
+  .main-nav ul {
+    display: flex;
+    float: left;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .main-nav ul li {
+    padding: 0 10px;
+    list-style: none;
+    
+  }
+  
+  .main-nav ul li a {
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family:'Prompt', sans-serif;
+    margin-left: 3px;
+    border-radius: 50px;
+    color:#000;
+    padding:5px 15px;
+  }
+
+  .main-nav ul li a:hover{
+    background: #616161;
+    box-shadow: #333;
+    color:#fff;
+}
+  
+  .main-nav ul li a:hover {
+    border-bottom: 2px solid #646464;
+  }
+  
+  .main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+  }
+  
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .dark {
+    color: #fff;
+  }
+  
+  .dark .btn {
+    background: #f4f4f4;
+    color: #333;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 400px;
+    background: url('https://cdn.discordapp.com/attachments/909028176674574341/967412717789011968/1.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    border-radius:0.5rem;
+    font-size:55px;
+    color:rgb(255, 255, 255);
+    justify-content:center;
+    align-items:center;
+    box-sizing:border-box;
+    margin:.30em;
+    background-size:cover;
+    background-position:center;
+    text-shadow:0px 2px 1px rgba(0, 0, 0, 0.598);
+    font-family: 'Prompt', sans-serif;
+
+  }
+ 
+  #about {
+	display: flex;
+	flex-direction: row;
+}
+
+#about p {
+	color: #0d2435;
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px;
+    float: left;
+    
+}
+
+#about p::after {
+	border-bottom: 2px dashed #918D8D;
+}
+
+
+@media(max-width: 700px) {
+    .menu-btn {
+      display: block;
+    }
+  
+    .menu-btn:hover {
+      opacity: 0.5;
+    }
+  
+    .main-nav ul.right-menu {
+      margin-right: 50px;
+    }
+  
+    .main-nav ul.main-menu {
+      display: block;
+      position: absolute;
+      top:0;
+      left: 0;
+      background: #f2f2f2;
+      width: 50%;
+      height: 100%;
+      border-right: #ccc 1px solid;
+      opacity: 0.9;
+      padding: 30px;
+      transform: translateX(-500px);
+      transition: transform 0.5s ease-in-out;
+     
+    }
+}
+    .main-nav ul.main-menu li {
+      padding: 10px;
+      border-bottom: #ccc solid 1px;
+      font-size: 14px;
+    }
+
+  
+    .main-nav ul.main-menu li:last-child {
+      border-bottom: 0;
+    }
+  
+    .main-nav ul.main-menu.show {
+      transform: translateX(-20px);
+    }
+
+
+
+    @media(max-width: 500px) {
+        .main-nav .name {
+          font-size: 25px;
+        }
+    }
